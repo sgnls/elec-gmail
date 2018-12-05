@@ -1,0 +1,52 @@
+{
+  "name": "elec-o365",
+  "version": "0.0.1",
+  "description": "Electron : o365",
+  "homepage": "https://github.com/sgnls/elec-o365",
+  "keywords": [
+    "o365"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sgnls/elec-o365.git"
+  },
+  "author": "Matt Hill <desk@sgnls.net>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "start": "electron ./app",
+    "start-debug": "WEB_DEBUG=1 electron --disable-http-cache ./app",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "devDependencies": {
+    "electron": "^1.4.15",
+    "electron-builder": "^13.11.1"
+  },
+  "build": {
+    "appId": "elec-o365",
+    "asar": false,
+    "linux": {
+      "category": "Network;Chat;Social",
+      "packageCategory": "net",
+      "executableName": "o365",
+      "synopsis": "O365 (Electron)",
+      "description": "O365 for Linux via Electron.",
+      "desktop": {
+        "Name": "O365",
+        "Comment": "O365 for Linux via Electron.",
+        "StartupWMClass": "o365"
+      },
+      "target": [
+        "tar.gz",
+        "deb",
+        "rpm",
+        "pacman"
+      ]
+    }
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/sgnls/elec-o365/issues"
+  },
+  "main": "index.js"
+}
