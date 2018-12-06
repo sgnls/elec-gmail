@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Gmail
+Comment=Electron : Gmail
+Exec=/home/cid/app.sh gmail
+Terminal=false
+Type=Application
+Icon=gmail
+StartupWMClass=gmail
+Categories=Network;Email;Chat;
