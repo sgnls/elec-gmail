@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Gmail
 Comment=Electron : Gmail
-Exec=/home/cid/app.sh gmail
+Exec=/path/to/app.sh gmail
 Terminal=false
 Type=Application
 Icon=gmail
